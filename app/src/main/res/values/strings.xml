@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">viddli</string>
+
+
+    <string-array name="planets_array">
+        <item>Coordinator</item>
+        <item>participant</item>
+        <item>Director</item>
+    </string-array>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#eeeeee</item>
+        <item name="colorControlActivated">#ffc400</item>
+    </style>
+</resources>

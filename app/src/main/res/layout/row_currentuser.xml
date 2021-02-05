@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="80dp"
+    android:padding="3dp"
+    android:layout_height="@dimen/_90sdp">
+
+    <ImageView
+        android:id="@+id/activeStatus"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/_35sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:elevation="@dimen/_10sdp"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/dot" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/currentUserOnline"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/_55sdp"
+        android:src="@drawable/imran"
+        android:layout_height="@dimen/_55sdp"
+        app:civ_border_width="3dp"
+        app:civ_border_color="#E6E3E3"/>
+
+
+
+
+        <TextView
+            android:layout_below="@+id/currentUserOnline"
+        android:gravity="center"
+        android:id="@+id/tvNamee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="name" />
+
+
+
+</RelativeLayout>

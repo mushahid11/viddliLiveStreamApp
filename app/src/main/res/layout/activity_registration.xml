@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/shade"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:background="@drawable/log"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp">
+            </ImageView>
+
+            <TextView
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_38sdp"
+                android:text="viddli"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/_20sdp"
+            android:text="Sign Up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+
+
+
+        <EditText
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:hint="Email Address"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:background="@drawable/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp">
+        </EditText>
+
+        <EditText
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:hint="Password"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:background="@drawable/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp">
+        </EditText>
+
+        <Button
+            android:layout_marginTop="@dimen/_18sdp"
+            android:text="Next"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/butten"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+        </Button>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+            <TextView
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:text="OR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <View
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:src="@drawable/face"
+                android:layout_height="@dimen/_45sdp"
+                app:civ_border_color="#FF000000"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/google" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_75sdp"
+            android:gravity="center"
+            android:text="Register a new user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <Button
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="SIGN UP"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:gravity="center"
+            android:onClick="moveToLogin"
+            android:textColor="@color/white"
+            android:background="@drawable/butten"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+        </Button>
+
+    </LinearLayout>
+</ScrollView>
