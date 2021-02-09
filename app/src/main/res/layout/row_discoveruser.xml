@@ -21,5 +21,4 @@
             android:src="@drawable/imran"/>
     </androidx.cardview.widget.CardView>
 
-
 </LinearLayout>

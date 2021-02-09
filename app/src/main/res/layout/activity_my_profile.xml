@@ -347,54 +347,23 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_marginTop="@dimen/_20sdp"
-        android:orientation="horizontal"
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_StreamsProductReview"
+        app:tabSelectedTextColor="@color/blue"
+        app:tabTextColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+    </com.google.android.material.tabs.TabLayout>
 
-
-
-        <TextView
-            android:layout_weight="1"
-            android:textSize="@dimen/_10sdp"
-            android:paddingStart="@dimen/_20sdp"
-            android:textColor="@color/black"
-            android:text="Stream"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </TextView>
-        <TextView
-            android:layout_weight="1"
-            android:textSize="@dimen/_10sdp"
-            android:paddingStart="@dimen/_20sdp"
-            android:textColor="@color/black"
-            android:text="Product"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </TextView>
-        <TextView
-            android:layout_weight="1"
-            android:textSize="@dimen/_10sdp"
-            android:paddingStart="@dimen/_20sdp"
-            android:textColor="@color/black"
-            android:text="Review"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        </TextView>
-
-
-    </LinearLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewDiscoverUser"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager_streamsProductReview"
+        android:layout_below="@+id/tab"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_200sdp"
-        android:padding="5dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:orientation="vertical"
-        app:spanCount="3"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+
+
 
 </LinearLayout>
