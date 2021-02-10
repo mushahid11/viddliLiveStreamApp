@@ -12,16 +12,18 @@ import android.widget.TextView;
 
 import com.eclairiose.viddli.Adapter.AdapterCurrentUser;
 import com.eclairiose.viddli.Adapter.AdapterDiscoverUser;
+import com.eclairiose.viddli.Adapter.AdapterStream;
 import com.eclairiose.viddli.Model.ModelCurrentUser;
 import com.eclairiose.viddli.Model.ModelDiscoverUser;
+import com.eclairiose.viddli.Model.ModelStream;
 
 import java.util.ArrayList;
 
 
 public class Streams extends Fragment {
-    RecyclerView recyclerView_SPR;
-    AdapterDiscoverUser adapterSPR;
-    ArrayList<ModelDiscoverUser> streamList = new ArrayList<>();
+    RecyclerView recyclerView_S;
+    AdapterStream adapterStream;
+    ArrayList<ModelStream> streamList = new ArrayList<>();
 
 
     @Override
@@ -30,10 +32,18 @@ public class Streams extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_streams, container, false);
 
-        recyclerView_SPR = (RecyclerView) v.findViewById(R.id.recyclerView_SPR);
+        recyclerView_S = (RecyclerView) v.findViewById(R.id.recyclerView_S);
+          ModelStream modelStream = new ModelStream();
+        for(int i = 0;i<10;i++) {
+            streamList.add(new ModelStream(R.drawable.u1));
+            streamList.add(new ModelStream(R.drawable.imran));
+            streamList.add(new ModelStream(R.drawable.alice));
+            streamList.add(new ModelStream(R.drawable.aliseena));
 
-        adapterSPR = new AdapterDiscoverUser(streamList, getContext());
-        recyclerView_SPR.setAdapter(adapterSPR);
+            streamList.add(modelStream);
+        }
+        adapterStream = new AdapterStream(streamList, getContext());
+        recyclerView_S.setAdapter(adapterStream);
         return v;
     }
 }

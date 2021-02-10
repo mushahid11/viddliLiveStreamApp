@@ -9,7 +9,7 @@
    <androidx.recyclerview.widget.RecyclerView
        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
        app:spanCount="3"
-       android:id="@+id/recyclerView_SPR"
+       android:id="@+id/recyclerView_S"
        android:layout_width="match_parent"
        android:layout_height="match_parent">
    </androidx.recyclerview.widget.RecyclerView>
